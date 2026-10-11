@@ -1,0 +1,1 @@
+﻿print("PowerShell @' ... '@ works flawlessly!")

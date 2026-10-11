@@ -1,0 +1,27 @@
+
+.splash-container {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: #0b0213;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.splash-container.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.splash-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* Use cover to maintain the beautiful aspect ratio exactly as designed */
+  object-fit: cover; 
+  z-index: 1;
+}
